@@ -1,0 +1,24 @@
+/* Style for all odd-numbered elements */
+.odd {
+    background-color: #ffcccc; /* light red/pink background */
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+  }
+  
+  /* Style for the second element (ID #unique-2) */
+  #unique-2 {
+    color: blue;
+    font-size: 36px;
+  }
+  
+  /* Style for the third element (class .cooler) */
+  .cooler {
+    font-size: 24px;
+  }
+  
+  /* Style for the fourth element (ID #unique-4) */
+  #unique-4 {
+    background-color: #ccffcc; /* light green background */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
