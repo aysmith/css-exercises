@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;            /* Make the header a flex container */
+  justify-content: space-between;  /* Push left-links to the left and right-links to the right */
+  align-items: center;       /* Vertically center everything */
+  padding: 8px;             /* Add some padding inside the header */
 }
 
 .logo {
@@ -14,6 +18,10 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  margin: 0;              /* Removes default margin */
+  padding: 0;             /* Removes default padding */
+  display: flex;          /* Make the list items horizontal */
+  gap: 8px;              /* Adds space between each list item */
 }
 
 a {
