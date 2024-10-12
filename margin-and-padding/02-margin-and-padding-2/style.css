@@ -7,21 +7,32 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 8px; /* 8px between the edge of the card and its content */
 }
 
 .title {
   background: #e3f4ff;
+  font-size: 16px; /* 16px font for the title */
+  padding: 8px; /* 8px between the title text and the edge of the title section */
+  margin-bottom: 8px; /* 8px gap between the title and content sections */
 }
 
 .content {
   background: #e3f4ff;
+  padding: 16px 8px; /* 16px top/bottom and 8px left/right padding */
+  margin-bottom: 8px; /* 8px gap between the content and button-container */
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center; /* Center everything inside the button container */
+  padding: 8px; /* 8px padding inside the button container */
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;      /* Center button on its own line */
+  margin: 8px auto;    /* 8px margin top/bottom and auto to center horizontally */
+  padding: 8px 24px;   /* 8px top/bottom and 24px left/right padding */
 }
