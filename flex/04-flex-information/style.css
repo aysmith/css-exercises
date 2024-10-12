@@ -7,9 +7,33 @@ img {
   height: 100px;
 }
 
+/* Center the title on the page */
+.title-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the title */
+  margin-bottom: 32px;      /* 32px space between the title and the items */
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+}
+
+/* Flexbox for item container to align items horizontally */
+.items-container {
+  display: flex;
+  justify-content: center;  /* Center all items horizontally */
+  gap: 52px;                /* 52px space between each item */
+}
+
+/* Style individual items */
+.item {
+  width: 200px;             /* Items are 200px wide */
+  text-align: center;        /* Center the text inside the item */
+}
+
+.text {
+  margin-top: 8px;          /* Add some space between the image and the text */
 }
 
 /* do not edit this footer */
