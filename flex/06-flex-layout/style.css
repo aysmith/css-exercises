@@ -5,6 +5,14 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex; /* Add flexbox to make the body a flex container */
+  flex-direction: column; /* Stacks the content vertically */
+}
+
+/* Removes underline from links and gives them a default color */
+a {
+  color: #666;
+  text-decoration: none;
 }
 
 img {
@@ -23,4 +31,36 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* Centers the content and adds spacing between items */
+.content {
+  flex: 1; /* Takes up available space in the layout */
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+  flex-direction: column; /* Stacks elements inside the content vertically */
+  gap: 16px; /* Adds spacing between elements */
+}
+
+/* Flexbox added to position header and footer items */
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between; /* Pushes left-links to the left and right-links to the right */
+  padding: 16px; /* Adds padding inside header and footer */
+}
+
+/* Footer styling with background */
+.footer {
+  background: #eee;
+}
+
+/* Makes lists (ul) horizontal with space between items */
+ul {
+  display: flex;
+  list-style: none; /* Removes bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  gap: 16px; /* Adds space between list items */
 }
