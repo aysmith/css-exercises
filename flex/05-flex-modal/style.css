@@ -20,6 +20,9 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 16px; /* Adds space between the icon and other elements */
+  padding: 16px; /* Adds padding inside the modal */
 }
 
 .icon {
@@ -33,6 +36,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0; /* Prevents the icon from shrinking when the modal is resized */
+}
+
+/* Creates a header container that includes the close button */
+.header {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  justify-content: space-between; /* Puts the close button on the far right */
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px; /* Adds space below the header */
+}
+
+/* Adds space below the main text content */
+.text {
+  margin-bottom: 16px;
 }
 
 .close-button {
